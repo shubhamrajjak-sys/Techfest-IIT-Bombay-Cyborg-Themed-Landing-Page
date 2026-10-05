@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#05070c" />
+  <meta name="description" content="CYBORG // Cybernetic Evolution — a futuristic landing page for the Techfest IIT Bombay CA web development task." />
+  <title>CYBORG // Cybernetic Evolution</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="scanlines"></div>
+  <div class="noise"></div>
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <header class="nav-wrap">
+    <nav class="nav shell">
+      <a class="brand" href="#top" aria-label="Cyborg home"><span class="brand-mark">◈</span> CYBORG<span class="brand-slash">//</span></a>
+      <div class="nav-links">
+        <a href="#system">SYSTEM</a>
+        <a href="#modules">MODULES</a>
+        <a href="#evolution">EVOLUTION</a>
+      </div>
+      <button class="nav-status" id="terminalBtn"><span class="pulse"></span> TERMINAL</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="line"></span> CYBERNETIC EVOLUTION / 30.0</div>
+        <h1>THE HUMAN<br><span class="glitch" data-text="MACHINE">MACHINE</span><br>INTERFACE.</h1>
+        <p class="hero-text">A new generation of augmented intelligence. Built where human instinct meets machine precision.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" id="scanBtn">INITIATE SCAN <span>↗</span></button>
+          <a class="btn btn-ghost" href="#modules">EXPLORE SYSTEM <span>↓</span></a>
+        </div>
+        <div class="micro-stats">
+          <div><strong>99.7%</strong><span>SYNC RATE</span></div>
+          <div><strong>0.02ms</strong><span>RESPONSE</span></div>
+          <div><strong>24/7</strong><span>UPTIME</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Futuristic cyborg interface visualization">
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="crosshair"><i></i><i></i><i></i><i></i></div>
+        <div class="cyborg">
+          <div class="head">
+            <div class="helmet-line"></div>
+            <div class="face">
+              <div class="eye left"></div><div class="eye right"></div>
+              <div class="nose"></div><div class="jaw"></div>
+              <div class="face-grid"></div>
+            </div>
+            <div class="side-chip left-chip">A-17</div>
+            <div class="side-chip right-chip">NX</div>
+          </div>
+          <div class="neck"></div>
+          <div class="torso"><div class="core"></div><div class="rib r1"></div><div class="rib r2"></div><div class="rib r3"></div></div>
+        </div>
+        <div class="telemetry top-left"><span>SUBJECT</span><b>NX-07</b><em>ONLINE</em></div>
+        <div class="telemetry bottom-right"><span>CORE TEMP</span><b id="temp">37.4°C</b><em>STABLE</em></div>
+        <div class="vertical-label">BIO-MECHANICAL // AUGMENTATION</div>
+      </div>
+    </section>
+
+    <section class="ticker"><div class="ticker-track">SYSTEM ONLINE&nbsp;&nbsp; • &nbsp;&nbsp;NEURAL LINK STABLE&nbsp;&nbsp; • &nbsp;&nbsp;BIO-SYNTHETIC CORE&nbsp;&nbsp; • &nbsp;&nbsp;HUMAN × MACHINE&nbsp;&nbsp; • &nbsp;&nbsp;SYSTEM ONLINE&nbsp;&nbsp; • &nbsp;&nbsp;</div></section>
+
+    <section class="section shell" id="system">
+      <div class="section-head"><div><span class="section-num">01 /</span><h2>THE NEW<br>STANDARD.</h2></div><p>Technology shouldn't replace humanity.<br><span>It should amplify it.</span></p></div>
+      <div class="system-grid">
+        <article class="feature-card large"><div class="card-tag">01 / NEURAL CORE</div><div class="icon neural">⌁</div><h3>ADAPTIVE<br>INTELLIGENCE</h3><p>Process complex environments in real time with a synthetic neural layer designed to learn, predict and respond.</p><div class="meter"><span style="width:92%"></span></div><small>COGNITIVE LOAD <b>92%</b></small></article>
+        <article class="feature-card"><div class="card-tag">02 / VISION</div><div class="mini-eye"></div><h3>PERCEPTION<br>ENGINE</h3><p>Multi-spectrum sensing turns the world into actionable data.</p><div class="metric"><b>8K</b><span>RESOLUTION</span></div></article>
+        <article class="feature-card"><div class="card-tag">03 / MOTION</div><div class="motion-lines"></div><h3>KINETIC<br>PRECISION</h3><p>Machine-assisted movement calibrated for speed, balance and control.</p><div class="metric"><b>4.8×</b><span>REACTION</span></div></article>
+      </div>
+    </section>
+
+    <section class="section modules shell" id="modules">
+      <div class="section-head compact"><div><span class="section-num">02 /</span><h2>CORE<br>MODULES.</h2></div><p>Every subsystem is built to disappear<br>into the instinct of the operator.</p></div>
+      <div class="module-list">
+        <button class="module active" data-module="NEURAL LINK"><span>01</span><b>NEURAL LINK</b><i>↗</i></button>
+        <button class="module" data-module="OCULAR MATRIX"><span>02</span><b>OCULAR MATRIX</b><i>↗</i></button>
+        <button class="module" data-module="KINETIC FRAME"><span>03</span><b>KINETIC FRAME</b><i>↗</i></button>
+        <button class="module" data-module="BIO-SYNTH SKIN"><span>04</span><b>BIO-SYNTH SKIN</b><i>↗</i></button>
+      </div>
+      <div class="module-console"><div class="console-label">MODULE DIAGNOSTIC</div><div class="console-main"><span id="moduleName">NEURAL LINK</span><span id="moduleState">● ACTIVE</span></div><div class="console-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><p id="moduleDesc">Direct cortical interface established. Latency is nominal. Synaptic bandwidth is operating above baseline.</p></div>
+    </section>
+
+    <section class="evolution" id="evolution">
+      <div class="shell evolution-inner">
+        <div class="section-head compact"><div><span class="section-num">03 /</span><h2>EVOLUTION<br>IS LOADING.</h2></div><p>We are not waiting for the future.<br><span>We are engineering it.</span></p></div>
+        <div class="timeline">
+          <div class="time-node"><span>2026</span><b>INITIATE</b><p>First-generation neural augmentation reaches consumer-grade stability.</p></div>
+          <div class="time-node current"><span>2032</span><b>INTEGRATE</b><p>Human and machine systems operate as one continuous interface.</p></div>
+          <div class="time-node"><span>2040</span><b>TRANSCEND</b><p>Biological limits become an engineering variable, not a boundary.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta shell">
+      <div class="cta-grid"><div><span class="section-num">04 / FINAL PROTOCOL</span><h2>READY TO<br><span>UPGRADE?</span></h2></div><div class="cta-right"><p>Enter the next phase of human capability. Your system is waiting.</p><button class="btn btn-primary" id="augmentBtn">ACTIVATE AUGMENTATION <span>↗</span></button><small>SECURE CONNECTION // ENCRYPTED</small></div></div>
+    </section>
+  </main>
+
+  <footer class="footer shell"><span>© 2026 CYBORG SYSTEMS</span><span>TECHFEST / IIT BOMBAY — WEB DEVELOPMENT</span><span>SYS.ID: NX-07</span></footer>
+
+  <div class="modal" id="terminalModal" aria-hidden="true"><div class="terminal"><button class="close" id="closeTerminal">×</button><div class="terminal-top"><span class="terminal-dot"></span> NEXUS TERMINAL</div><div class="terminal-body" id="terminalBody"></div><div class="terminal-input"><span>&gt;</span><span class="blink">_</span></div></div></div>
+  <div class="toast" id="toast">SYSTEM SCAN COMPLETE // ALL SYSTEMS NOMINAL</div>
+  <script src="script.js"></script>
+</body>
+</html>
